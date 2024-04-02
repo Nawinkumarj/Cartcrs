@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CARTCRS-VHS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 ">
+                            <div class="social_media_links">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i> Kumarasamy@cartcrs.org</a></li>
+                                    <li><a href="#"> <i class="fa fa-phone"></i> +91 44 7122 6600
+                                        6610, 6611, 6612</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="{% url 'index' %}">
+                                    <div class="logo-container">
+                                        <img src="{% static 'img/cartcrs-logo.png' %}" width="105px" alt="CARTCRS" class="logo">
+                                        <img src="{% static 'img/VHS LOGO2.png' %}" width="50px" alt="VHS" class="logo">
+                                        <img src="{% static 'img/idmc-logo.png' %}" width="90px" alt="IDMC" class="logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="{% url 'index' %}">Home</a></li>
+                                        <li><a href="{% url 'about' %}">about</a></li>
+                                        <li><a href="{% url 'Department' %}">Department</a></li>
+                                        <li><a href="{% url 'blog' %}">blog</a>
+                                        <li><a href="{% url 'Doctors' %}">Doctors</a></li>
+                                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a class="popup-with-form" href="#test-form">Make an Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider d-flex align-items-center slider_bg_2" style="background-image:url('{% static 'img/mainbuildidmc.jpg' %}')" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text1">
+                                <h3><span>Leader in Infectious Diseases Patient Care,</span><br>
+                                    Education and Research</h3>
+                                <a href="{% url 'Department' %}" class="boxed-btn3">Check Our Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider d-flex align-items-center slider_bg_1" style="background-image:url('{% static 'img/bg3.jpg' %}')" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text">
+                                <h3><span>Family-Centered Care</span><br>
+                                    Supporting Your Healing Journey Together.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- slider_area_end -->
+
+    <!-- service_area_start -->
+    <div class="service_area">
+        <div class="container p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-electrocardiogram"></i>
+                        </div>
+                        <h3>Hospitality</h3>
+                        <p>Clinical excellence must be the priority for any health care service provider.</p>
+                        <a href="#" class="boxed-btn3-white">Apply For a Bed</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-emergency-call"></i>
+                        </div>
+                        <h3>Emergency Care</h3>
+                        <p>Clinical excellence must be the priority for any health care service provider.</p>
+                        <a href="#" class="boxed-btn3-white">+10 672 356 3567</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service">
+                        <div class="icon">
+                            <i class="flaticon-first-aid-kit"></i>
+                        </div>
+                        <h3>Chamber Service</h3>
+                        <p>Clinical excellence must be the priority for any health care service provider.</p>
+                        <a href="#" class="boxed-btn3-white">Make an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area_end -->
+
+    <!-- welcome_docmed_area_start -->
+    <div class="welcome_docmed_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{% static '/img/img3.jpg' %}" alt="">
+                        </div>
+                        <div class="thumb_2">
+                            <img src="{% static '/img/img3.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h2>About Us</h2>
+                        <h3>VHS-INFECTIOUS DISEASES MEDICAL CENTRE</h3>
+                        <!--p>VHS-Infectious Diseases Medical Centre(IDMC)<br> (formerly VHS-YRGCARE Medical Centre) <br>in Voluntary Health Services, 
+                            Chennai, India provides medical care for persons<br> with 
+                            
+                        disease,Tuberculosis,  Viral Hepatitis and other Infectious diseases.
+                        </p-->
+                        <ul>
+                            <li> VHS-Infectious Diseases Medical Centre(IDMC) </li>
+                           
+                        </ul>
+                        <a href="#" class="boxed-btn3-white-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- welcome_docmed_area_end -->
+
+   <!-- offers_area_start -->
+   <div class="our_department_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-55">
+                    <h3>Our Departments</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem. <br>
+                        It esteems luckily or picture placing drawing. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    <div class="department_content">
+                        <h3><a href="#">HIV</a></h3>
+                        <p> HIV/AIDS impacts millions, challenging treatment and battling societal stigma.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    
+                    <div class="department_content">
+                        <h3><a href="#">COVID</a></h3>
+                        <p>COVID-19 reshapes societies, emphasizing vaccination and public health measures.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    
+                    <div class="department_content">
+                        <h3><a href="#">Tuberculosis</a></h3>
+                        <p>TB's global reach demands improved diagnosis and treatment against drug-resistant strains.</p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_department">
+                    
+                    <div class="department_content">
+                        <h3><a href="#">Hepatitis</a></h3>
+                        <p>HBV infection threatens liver health, urging vaccination and access to treatment for prevention.
+                       </p>
+                        <a href="#" class="learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- offers_area_end -->
+
+    
+<!-- footer start -->
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-4">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <img src="{% static 'img/cartcrs-logo.png' %}" width="130px " alt="">
+                                    </a>
+                                </div>
+                                <p>
+                                    Leader in Infectious Diseases Patient Care, Education and Research
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Departments
+                                </h3>
+                                <ul>
+                                    <li><a href="#">HIV</a></li>
+                                    <li><a href="#">Tuberculosis</a></li>
+                                    <li><a href="#">Hepatitis</a></li>
+                                    <li><a href="#">COVID</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Useful Links
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                    <li><a href="#"> Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Address
+                                </h3>
+                                <p>
+                                    SH 49A, Pallipattu, Tharamani, Chennai, Tamil Nadu 600113.<br>
+                                    Kumarasamy@cartcrs.org
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                    <button class="btn btn-primary" title="Back to Top">
+                      <i class="fa fa-angle-double-up"></i>
+                    </button>
+                  </div>
+            </div>
+        </footer>
+<!-- footer end  -->
+
+
+    <!-- link that opens popup -->
+
+   <!-- form itself end-->
+<form action="{% url 'book_appointment' %}" method="POST" id="test-form" class="white-popup-block mfp-hide" autocomplete="off">
+    {% csrf_token %}
+    <div class="popup_box">
+        <div class="popup_inner">
+            <h3>Make an Appointment</h3>
+                     
+                <div class="row">
+                    <div class="col-xl-6">
+                        <input type="date" id="datepicker" name="datepicker">
+                    </div>
+                    
+                    <div class="col-xl-6">
+                        <select class="form-select wide" id="departmentselect" name="departmentselect">
+                            <option data-display="Select Department">Department</option>
+                            <option value="1">HIV</option>
+                            <option value="2">Tuberculosis</option>
+                            <option value="3">Hepatitis</option>
+                            <option value="4">COVID</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-6">
+                        <select class="form-select wide" id="doctorselect" name="doctorselect">
+                            <option data-display="Select Doctor">Doctor</option>
+                            <option value="1">Dr.Kumarasamy</option>
+                            <option value="2">Dr. S. Poongulali</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-6">
+                        <input type="name" placeholder="name" id="name" name="name">
+                    </div>
+                    <div class="col-xl-6">
+                        <input type="phone" placeholder="phone" id="phone" name="phone">
+                    </div>
+                    <div class="col-xl-12">
+                        <input type="email" placeholder="email" id="email" name="email">
+                    </div>
+                    <div class="col-xl-12">
+                        <button type="submit" class="boxed-btn3">Confirm</button>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</form>
+    
+    
+            </div>
+        </div>
+    </form></div>
+    <!-- form itself end -->
+
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/scrollIt.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+    <!--contact js-->
+    
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
+
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+</body>
+
+</html>
